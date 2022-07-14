@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        tools:context=".fragments.AboutUsFragment">
+
+        <ImageView
+            android:id="@+id/aboutUsBackgroundRectangle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/mediumMargin"
+            android:background="@drawable/app_logo"
+            android:contentDescription="@string/file_background_rectangle_cd"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/aboutUsAppName" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/mediumMargin"
+            android:alpha="0.25"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/app_logo"
+            app:layout_constraintBottom_toBottomOf="@id/aboutUsSubText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/aboutUsBackgroundRectangle" />
+
+        <TextView
+            android:id="@+id/aboutUsAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mediumMargin"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/alternativeText"
+            android:textSize="@dimen/extraLargeText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/aboutUsText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/mediumMargin"
+            android:layout_marginStart="@dimen/mediumMargin"
+            android:layout_marginTop="@dimen/largeMargin"
+            android:justificationMode="inter_word"
+            android:text="@string/about_us_text"
+            android:textColor="@color/primaryBlack"
+            android:textSize="@dimen/mediumText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/aboutUsBackgroundRectangle" />
+
+        <TextView
+            android:id="@+id/aboutUsSubText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/mediumMargin"
+            android:layout_marginTop="208dp"
+            android:layout_marginEnd="@dimen/mediumMargin"
+            android:justificationMode="inter_word"
+            android:text="@string/about_us_subtext"
+            android:textColor="@color/primaryBlack"
+            android:textSize="@dimen/mediumText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/aboutUsText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
